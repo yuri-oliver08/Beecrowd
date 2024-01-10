@@ -9,21 +9,25 @@ Saída
 Para cada dupla de valores, imprima a sequência do menor até o maior e a soma deles, conforme exemplo abaixo.
 '''
 
+check = 1
+
 while True:
     nums = input()
-
     interval = nums.split()
-
     intervalIn = [int(x) for x in interval]
     intervalIn.sort()
-
     numbers = []
 
-    if len(intervalIn) > 1:
-        for n in range(intervalIn[0],intervalIn[1]+1):
-            numbers.append(n)
-        print(numbers)
-    else:
+    for n in intervalIn:
+        if n <= 0:
+            check = 0
+    if check == 0:
         break
 
-    
+    for num in range(intervalIn[0], intervalIn[1]+1):
+        numbers.append(num)
+
+    numbersSTR = [str(x) for x in numbers]
+    output = ' '.join(numbersSTR)
+
+    print(f'{output} Sum={sum(numbers)}')
