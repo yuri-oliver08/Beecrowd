@@ -8,3 +8,17 @@ Saída
 Para cada caso de teste imprima “Crescente”, caso os valores tenham sido digitados na ordem crescente, caso contrário imprima a mensagem “Decrescente”.
 
 '''
+
+while True:
+
+    ent = input()
+    nums = ent.split()
+    numbers = [int(x) for x in nums]
+
+    if numbers[0] == numbers[1]:
+        break
+    else:
+        if numbers[0] > numbers[1]:
+            print('Decrescente')
+        else:
+            print('Crescente')
