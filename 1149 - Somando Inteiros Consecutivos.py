@@ -11,19 +11,17 @@ A saída contém apenas um valor inteiro.
 
 entrada = input()
 nums = [int(x) for x in entrada.split()]
-lista = []
+elementos = [n for n in nums if n > 0]
+resultado = []
+
 while True:
 
-    if nums[1] <= 0:
-        nums[1] = int(input())
-        continue
-    else:
-        for n in range(0, nums[1]):
-            soma = nums[0] + n
-            lista.append(soma)
-        break
+    for n in range(0, elementos[1]):
+        soma = elementos[0] + n
+        resultado.append(soma)
+    break
 
-print(sum(lista))
+print(sum(resultado))
 
         
 
