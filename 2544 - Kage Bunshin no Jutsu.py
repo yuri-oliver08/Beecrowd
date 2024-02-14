@@ -20,11 +20,12 @@ Para cada caso de teste, imprima uma linha contendo o número de vezes que a té
 import math
 
 while True:
+    count = 0
     try:
         num = int(input())
-        if num == 1:
-            print('0')
-        else:
-            print(f'{math.sqrt(num):.0f}')
+        while num != 1:
+            num/=2
+            count+=1
+        print(count)   
     except EOFError:
         break
