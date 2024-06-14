@@ -17,7 +17,6 @@ Em seguida háverá um inteiro (1 ou 2), correspondente à repetição do progra
 Saída
 Após cada leitura dos gols, deve ser impressa a mensagem "Novo grenal (1-sim 2-nao)". 
 Quando o algoritmo for encerrado devem ser mostradas as estatísticas conforme a descrição apresentada acima. Obs: a palavra "Gremio" deve ser impressa sem acento, conforme o exemplo abaixo.
-
 '''
 
 
